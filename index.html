@@ -3,18 +3,525 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Harish Vangala | AI • Cloud • Data Engineering</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<title>Harish Vangala | Technology Leadership Portfolio</title>
+
+https://fonts.googleapis.com
+https://fonts.gstatic.com
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 <style>
-body{margin:0;font-family:Inter,sans-serif;background:#08111f;color:#fff}nav{position:sticky;top:0;background:#0d1730;padding:15px;text-align:center}nav a{color:#fff;text-decoration:none;margin:0 15px}.hero{padding:100px 20px;text-align:center;background:linear-gradient(135deg,#2563eb,#08111f)}.hero h1{font-size:56px}.section{max-width:1100px;margin:auto;padding:60px 20px}.card{background:#121f3b;padding:24px;border-radius:12px;margin:10px 0}.skills{display:flex;flex-wrap:wrap;gap:10px}.skills span{background:#1d2c52;padding:10px 16px;border-radius:20px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}.cert,.proj{background:#121f3b;padding:20px;border-radius:12px}h2{color:#60a5fa}a{color:#60a5fa}footer{text-align:center;padding:30px}.timeline{border-left:3px solid #3b82f6;padding-left:20px}.job{margin-bottom:25px}
-</style></head><body>
-<nav><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#certs">Certifications</a><a href="#contact">Contact</a></nav>
-<section class="hero"><h1>Harish Vangala</h1><h3>Module Lead Systems | AI • Cloud • Data Engineering • Technology Leadership</h3><p>13+ years of experience delivering enterprise software, cloud, AI, big data and digital transformation solutions.</p></section>
-<section id="about" class="section"><h2>Professional Summary</h2><div class="card"><p>Technology leader with 13+ years of overall experience and 10+ years of onsite experience in the USA. Extensive experience across software engineering, cloud computing, big data ecosystems, AI solutions, program delivery and team leadership. Proven ability to lead 30+ member teams, coordinate stakeholders, drive enterprise transformation and deliver mission-critical technology initiatives.</p></div></section>
-<section id="skills" class="section"><h2>Skills</h2><div class="skills"><span>Generative AI</span><span>GPT-4/GPT-5</span><span>OpenAI</span><span>Claude</span><span>Java</span><span>Python</span><span>Scala</span><span>Azure</span><span>AWS</span><span>GCP</span><span>Apache Spark</span><span>Kafka</span><span>Airflow</span><span>Terraform</span><span>Jenkins</span><span>Oracle</span><span>MongoDB</span><span>Cassandra</span><span>Leadership</span><span>Agile</span></div></section>
-<section id="experience" class="section"><h2>Experience</h2><div class="timeline"><div class="job"><h3>Mphasis Inc - Module Lead Systems</h3><p>June 2023 - Present | Columbus, Ohio</p></div><div class="job"><h3>UST - Lead II Software Engineering</h3><p>Apr 2021 - Jun 2023</p></div><div class="job"><h3>UST - Lead I Software Engineering</h3><p>Apr 2019 - Mar 2021</p></div><div class="job"><h3>UST - Senior Software Developer</h3><p>Apr 2016 - Mar 2019</p></div><div class="job"><h3>UST - Software Engineer</h3><p>Mar 2013 - Mar 2016</p></div><div class="job"><h3>Datacore Technologies - Software Engineer</h3><p>Oct 2012 - Jan 2013</p></div></div></section>
-<section class="section"><h2>Featured Areas</h2><div class="grid"><div class="proj"><h3>AI & GenAI</h3><p>OpenAI, GPT models, enterprise AI adoption and automation.</p></div><div class="proj"><h3>Cloud Engineering</h3><p>Azure, AWS, GCP, Infrastructure as Code and modernization.</p></div><div class="proj"><h3>Big Data</h3><p>Hadoop, Spark, Kafka, Hive, Airflow and large-scale data platforms.</p></div><div class="proj"><h3>Leadership</h3><p>Managed 30+ team members and global delivery programs.</p></div></div></section>
-<section id="certs" class="section"><h2>Certifications</h2><div class="grid"><div class="cert">PMP</div><div class="cert">AWS Cloud Practitioner</div><div class="cert">HashiCorp Terraform Associate</div><div class="cert">CSM</div><div class="cert">SnowPro Associate</div><div class="cert">OCJP</div><div class="cert">OCWCD</div><div class="cert">Databricks Fundamentals</div><div class="cert">Databricks GenAI Fundamentals</div><div class="cert">Apache Airflow Fundamentals</div></div></section>
-<section id="contact" class="section"><h2>Contact</h2><div class="card"><p>Email: <a href="mailto:harishv0211@gmail.com">harishv0211@gmail.com</a></p><p>LinkedIn: <a href="https://www.linkedin.com/in/harish-vangala-b9912497/">harish-vangala-b9912497</a></p><p>GitHub: <a href="https://github.com/harishv0211">github.com/harishv0211</a></p><p>Location: Columbus, Ohio, USA</p></div></section><footer>© 2026 Harish Vangala</footer></body></html>
+
+:root{
+    --bg:#f5f7fb;
+    --text:#1b2430;
+    --primary:#0f172a;
+    --accent:#2563eb;
+    --card:#ffffff;
+    --muted:#64748b;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.7;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    background:white;
+    box-shadow:0 2px 8px rgba(0,0,0,.05);
+    z-index:1000;
+}
+
+.nav-container{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-weight:800;
+    font-size:1.2rem;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#334155;
+    margin-left:20px;
+}
+
+.hero{
+    padding:100px 20px;
+}
+
+.hero-container{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero h2{
+    color:var(--accent);
+    margin-bottom:25px;
+}
+
+.hero p{
+    color:var(--muted);
+    font-size:1.1rem;
+}
+
+.hero-card{
+    background:white;
+    padding:30px;
+    border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.section{
+    max-width:1200px;
+    margin:auto;
+    padding:70px 20px;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:40px;
+}
+
+.metrics{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.metric{
+    background:white;
+    padding:30px;
+    border-radius:16px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+}
+
+.metric h3{
+    color:var(--accent);
+    font-size:2rem;
+}
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:16px;
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+}
+
+.card h3{
+    color:var(--accent);
+    margin-bottom:10px;
+}
+
+.timeline{
+    max-width:900px;
+    margin:auto;
+}
+
+.timeline-item{
+    background:white;
+    padding:25px;
+    margin-bottom:20px;
+    border-left:5px solid var(--accent);
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+}
+
+.timeline-item h3{
+    margin-bottom:8px;
+}
+
+.date{
+    color:var(--muted);
+    margin-bottom:10px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+}
+
+.skills span{
+    background:white;
+    padding:10px 18px;
+    border-radius:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact a{
+    color:var(--accent);
+    text-decoration:none;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:var(--muted);
+}
+
+@media(max-width:768px){
+
+.hero-container{
+    grid-template-columns:1fr;
+}
+
+.hero h1{
+    font-size:2.5rem;
+}
+
+.nav-links{
+    display:none;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+
+<div class="nav-container">
+
+<div class="logo">
+Harish Vangala
+</div>
+
+<div class="nav-links">
+#summarySummary</a>
+#impactImpact</a>
+#experienceExperience</a>
+#skillsSkills</a>
+#certificationsCertifications</a>
+#contactContact</a>
+</div>
+
+</div>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-container">
+
+<div>
+
+<h1>
+Harish Vangala
+</h1>
+
+<h2>
+Technology Leader | AI Transformation | Cloud Strategy
+</h2>
+
+<p>
+Technology professional with 13+ years of experience leading
+enterprise software engineering, artificial intelligence,
+cloud modernization, big data, and digital transformation
+initiatives across global organizations.
+
+Proven success in delivering business outcomes through
+technology leadership, program execution, stakeholder
+management, and high-performing engineering teams.
+</p>
+
+</div>
+
+<div class="hero-card">
+
+<h3>Leadership Snapshot</h3>
+
+<br>
+
+<p>✅ 13+ Years Industry Experience</p>
+<p>✅ 10+ Years USA Experience</p>
+<p>✅ 30+ Team Members Managed</p>
+<p>✅ PMP Certified</p>
+<p>✅ AI & Cloud Transformation Leader</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="impact" class="section">
+
+<h2 class="section-title">
+Leadership Impact
+</h2>
+
+<div class="metrics">
+
+<div class="metric">
+<h3>13+</h3>
+<p>Years Experience</p>
+</div>
+
+<div class="metric">
+<h3>10+</h3>
+<p>Years USA Experience</p>
+</div>
+
+<div class="metric">
+<h3>30+</h3>
+<p>Engineers Led</p>
+</div>
+
+<div class="metric">
+<h3>Global</h3>
+<p>Program Delivery</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="summary" class="section">
+
+<h2 class="section-title">
+Executive Summary
+</h2>
+
+<div class="card">
+
+<p>
+
+Experienced technology leader specializing in Artificial Intelligence,
+Cloud Platforms, Big Data Engineering, Enterprise Architecture,
+Software Delivery, and Organizational Leadership.
+
+Expertise spans Azure, AWS, GCP, OpenAI technologies,
+Data Engineering ecosystems, Infrastructure as Code,
+and Agile delivery practices.
+
+Strong history of building scalable enterprise systems,
+leading cross-functional teams, and driving innovation
+through strategic technology investments.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="experience" class="section">
+
+<h2 class="section-title">
+Career Journey
+</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>Mphasis Inc</h3>
+<div class="date">
+Module Lead Systems | June 2023 - Present
+</div>
+<p>
+Leading enterprise transformation initiatives involving
+AI, Cloud Engineering, Data Platforms, and Technology Strategy.
+</p>
+</div>
+
+<div class="timeline-item">
+<h3>UST</h3>
+<div class="date">
+Lead II Software Engineering | 2021 - 2023
+</div>
+<p>
+Managed engineering organizations and enterprise-scale technology programs.
+</p>
+</div>
+
+<div class="timeline-item">
+<h3>UST</h3>
+<div class="date">
+Lead I Software Engineering | 2019 - 2021
+</div>
+<p>
+Provided architectural leadership and cloud modernization guidance.
+</p>
+</div>
+
+<div class="timeline-item">
+<h3>UST</h3>
+<div class="date">
+Senior Software Developer | 2016 - 2019
+</div>
+<p>
+Built enterprise software and big data ecosystems.
+</p>
+</div>
+
+<div class="timeline-item">
+<h3>UST</h3>
+<div class="date">
+Software Engineer | 2013 - 2016
+</div>
+<p>
+Developed enterprise applications and data processing solutions.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="skills" class="section">
+
+<h2 class="section-title">
+Technology Leadership Areas
+</h2>
+
+<div class="skills">
+
+<span>Artificial Intelligence</span>
+<span>Generative AI</span>
+<span>Cloud Strategy</span>
+<span>Azure</span>
+<span>AWS</span>
+<span>GCP</span>
+<span>Enterprise Architecture</span>
+<span>Data Engineering</span>
+<span>Big Data</span>
+<span>DevOps</span>
+<span>Terraform</span>
+<span>Leadership</span>
+<span>Program Management</span>
+<span>Agile Delivery</span>
+<span>Stakeholder Management</span>
+
+</div>
+
+</section>
+
+<section id="certifications" class="section">
+
+<h2 class="section-title">
+Certifications
+</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>PMP</h3>
+<p>Project Management Professional</p>
+</div>
+
+<div class="card">
+<h3>AWS</h3>
+<p>Cloud Practitioner</p>
+</div>
+
+<div class="card">
+<h3>Terraform</h3>
+<p>HashiCorp Associate</p>
+</div>
+
+<div class="card">
+<h3>CSM</h3>
+<p>Certified Scrum Master</p>
+</div>
+
+<div class="card">
+<h3>Snowflake</h3>
+<p>SnowPro Associate</p>
+</div>
+
+<div class="card">
+<h3>Oracle</h3>
+<p>OCJP & OCWCD</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="section">
+
+<h2 class="section-title">
+Contact
+</h2>
+
+<div class="contact">
+
+<p>
+📧
+<a href="mailto:harishv0211@gmail.com">
+harishv0211@gmail.com
+</a>
+</p>
+
+<p>
+💼
+https://www.linkedin.com/in/harish-vangala-b9912497/
+LinkedIn Profile
+</a>
+</p>
+
+<p>
+💻
+https://github.com/harishv0211
+github.com/harishv0211
+</a>
+</p>
+
+<p>
+📍 Columbus, Ohio, USA
+</p>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Harish Vangala | Technology Leadership Portfolio
+</footer>
+
+</body>
+</html>
